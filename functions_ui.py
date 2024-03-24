@@ -29,18 +29,12 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
-import os
-import pandas as pd
 from langchain.document_loaders import CSVLoader 
 from langchain.indexes import VectorstoreIndexCreator 
 from langchain.chains import RetrievalQA 
 from langchain.llms import OpenAI 
 from langchain_community.document_loaders import DataFrameLoader
 import constant
-__import__('pysqlite3-binary')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3-binary')
-import sqlite3
 import chromadb
 
 os.environ["OPENAI_API_KEY"] = constant.OPENAI_API_KEY
