@@ -35,7 +35,7 @@ from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI 
 from langchain_community.document_loaders import DataFrameLoader
 import constant
-import chromadb
+#import chromadb
 
 os.environ["OPENAI_API_KEY"] = constant.OPENAI_API_KEY
 embedding_function = OpenAIEmbeddings()
