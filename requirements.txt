@@ -5,7 +5,6 @@ altair>=4.0
 langchain
 openai
 langchain_community
-os
 chromadb
 numpy
 matplotlib
