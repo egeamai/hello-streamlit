@@ -18,14 +18,10 @@ from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts.prompt import PromptTemplate
 from langchain_core.prompts.chat import ChatPromptTemplate
-from langchain.vectorstores import Chroma
-#import chromadb
 from operator import itemgetter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
 from langchain.document_loaders import PyPDFLoader
-import streamlit as st
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import CSVLoader
 from langchain.embeddings import OpenAIEmbeddings
@@ -209,7 +205,6 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts.prompt import PromptTemplate
 from langchain_core.prompts.chat import ChatPromptTemplate
 from langchain.vectorstores import Chroma
-import chromadb
 from operator import itemgetter
 import pandas as pd
 import constant
