@@ -19,7 +19,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts.prompt import PromptTemplate
 from langchain_core.prompts.chat import ChatPromptTemplate
 from langchain.vectorstores import Chroma
-import chromadb
+#import chromadb
 from operator import itemgetter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OpenAIEmbeddings
