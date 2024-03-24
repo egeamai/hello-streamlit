@@ -6,4 +6,5 @@ langchain
 openai
 langchain_community
 numpy
-matplotlib
+datasets
+ragas
