@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import chromadb
 import pandas as pd
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
