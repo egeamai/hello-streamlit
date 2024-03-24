@@ -359,6 +359,7 @@ def MLEngineerRun(essay_no):
 ########################################################################################
 # AM ENGINEER PART
 ########################################################################################
+!python -m pip install chromadb 
 # get vector store
 def call_vectordb(embedding_function):
     #collection_name_1 = st.text_input("What is the collection name: ")
