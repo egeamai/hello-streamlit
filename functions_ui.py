@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import chromadb
 import pandas as pd
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
@@ -38,7 +37,11 @@ from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI 
 from langchain_community.document_loaders import DataFrameLoader
 import constant
-
+__import__('pysqlite3-binary')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3-binary')
+import sqlite3
+import chromadb
 
 os.environ["OPENAI_API_KEY"] = constant.OPENAI_API_KEY
 embedding_function = OpenAIEmbeddings()
