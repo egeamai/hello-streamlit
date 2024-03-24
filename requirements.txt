@@ -11,3 +11,4 @@ numpy
 datasets
 ragas
 #chromadb
+subprocess
